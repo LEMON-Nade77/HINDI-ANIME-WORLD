@@ -83,7 +83,7 @@ module.exports = [
         number: 2,
         title: "Episode 2",
         type: "iframe",
-        src: "https://rumble.com/embed/v79syk0/?pub=4pw4c8"
+        src: "https://desidubanime.p2pplay.pro/#kl5eju"
       }
     ]
   }
