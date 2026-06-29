@@ -59,39 +59,17 @@ module.exports = [
         number: 1,
         title: "Episode 1",
         type: "iframe",
-        src: "https://gdmirrorbot.nl/embed/en2l9r6"
+        // Derived from the watch-page slug https://rumble.com/v7bzixm-...html
+        // If this doesn't play, go to the video on rumble.com -> Share -> Embed
+        // and paste the exact URL from that embed code here instead.
+        src: "https://rumble.com/embed/v79suxe/?pub=4pw4c8"
       },
       {
         number: 2,
         title: "Episode 2",
         type: "iframe",
-        src: "https://gdmirrorbot.nl/embed/taup63d"
-      },
-      {
-        number: 3,
-        title: "Episode 3",
-        type: "iframe",
-        src: "https://gdmirrorbot.nl/embed/jonuq1e"
-      },
-      {
-        number: 4,
-        title: "Episode 4",
-        type: "iframe",
-        src: "https://gdmirrorbot.nl/embed/vru4xh8"
-      },
-      {
-        number: 5,
-        title: "Episode 5",
-        type: "iframe",
-        src: "https://gdmirrorbot.nl/embed/vi3jlvm"
-      },
-      {
-        number: 6,
-        title: "Episode 6",
-        type: "iframe",
-        src: "https://gdmirrorbot.nl/embed/zag1uao"
-      },
-    ]
+        src: "https://desidubanime.p2pplay.pro/#kl5eju"
+      }
     ]
   },
   {
