@@ -44,7 +44,7 @@ module.exports = [
         number: 1,
         title: "Episode 1",
         type: "mp4",
-        src: "https://hubstream.art/#glb5wf"
+        src: "https://youtu.be/eHTXQW58WhA?si=bS7BIVeN76nSszUO"
       }
     ]
   },
