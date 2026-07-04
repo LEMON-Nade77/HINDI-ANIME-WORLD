@@ -226,31 +226,41 @@ function renderBanner() {
   }
   bannerEl.classList.remove("hidden");
 
-  bannerEl.innerHTML = bannerSlides
-    .map(
-      (a, i) => `
-      <div class="banner-slide${i === bannerIndex ? " active" : ""}" style="background-image:url('${escapeHtml(a.cover)}')" data-id="${a.id}">
+  bannerEl.innerHTML =
+    bannerSlides
+      .map(
+        (a, i) => `
+      <div class="banner-slide${i === bannerIndex ? " active" : ""}" style="background-image:url('${escapeHtml(a.cover)}')">
         <div class="banner-copy">
-          <span class="banner-eyebrow mono">${i === 0 ? "LATEST" : "POPULAR"} · EP ${pad(a.episodeCount)}</span>
-          <div class="banner-title">${escapeHtml(a.title)}</div>
+          <span class="banner-eyebrow mono">#${i + 1} SPOTLIGHT</span>
+          <h2 class="banner-title">${escapeHtml(a.title)}</h2>
+          <div class="banner-meta mono">
+            <span class="banner-meta-item">📺 SERIES</span>
+            <span class="banner-meta-item">🕐 ${pad(a.episodeCount)} EP</span>
+            ${a.tags && a.tags[0] ? `<span class="banner-badge">${escapeHtml(a.tags[0])}</span>` : ""}
+          </div>
           <p class="banner-synopsis">${escapeHtml(a.synopsis || "")}</p>
+          <div class="banner-actions">
+            <button class="banner-watch-btn" data-id="${a.id}">▶ Watch Now</button>
+            <button class="banner-detail-btn" data-id="${a.id}">Detail ›</button>
+          </div>
         </div>
       </div>`
-    )
-    .join("") +
-    `<div class="banner-dots">${bannerSlides
-      .map((_, i) => `<button class="banner-dot${i === bannerIndex ? " active" : ""}" data-index="${i}"></button>`)
-      .join("")}</div>`;
+      )
+      .join("") +
+    `<button class="banner-nav banner-nav-next" aria-label="Next">›</button>
+     <button class="banner-nav banner-nav-prev" aria-label="Previous">‹</button>`;
 
-  bannerEl.querySelectorAll(".banner-slide").forEach((el) => {
+  bannerEl.querySelectorAll(".banner-watch-btn, .banner-detail-btn").forEach((el) => {
     el.addEventListener("click", () => openAnime(Number(el.dataset.id)));
   });
-  bannerEl.querySelectorAll(".banner-dot").forEach((el) => {
-    el.addEventListener("click", (e) => {
-      e.stopPropagation();
-      goToBannerSlide(Number(el.dataset.index));
-      startBannerAutoplay(); // reset the clock on manual interaction
-    });
+  bannerEl.querySelector(".banner-nav-next").addEventListener("click", () => {
+    goToBannerSlide(bannerIndex + 1);
+    startBannerAutoplay();
+  });
+  bannerEl.querySelector(".banner-nav-prev").addEventListener("click", () => {
+    goToBannerSlide(bannerIndex - 1);
+    startBannerAutoplay();
   });
 }
 
