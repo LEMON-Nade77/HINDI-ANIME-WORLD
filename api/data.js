@@ -157,7 +157,7 @@ module.exports = [
         number: 1,
         title: "Movie",
         type: "iframe",
-        src: "https://desidubanime.strp2p.site/#nj81sf"
+        src: "https://rumble.com/embed/v7a5feq/?pub=4pw4c8"
       }
     ]
   },
