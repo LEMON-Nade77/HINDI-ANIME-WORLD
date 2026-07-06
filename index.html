@@ -40,11 +40,24 @@
       <span class="divider-line"></span>
     </section>
 
-    <section id="grid" class="grid" aria-live="polite"></section>
+    <div class="catalog-layout">
+      <div class="catalog-main">
+        <section id="grid" class="grid" aria-live="polite"></section>
 
-    <p id="emptyState" class="empty-state hidden">
-      No titles match that search. Try another keyword.
-    </p>
+        <p id="emptyState" class="empty-state hidden">
+          No titles match that search. Try another keyword.
+        </p>
+      </div>
+
+      <aside class="sidebar-col">
+        <div class="side-panel">
+          <div class="side-panel-head">
+            <span class="side-panel-title">TOP TITLES</span>
+          </div>
+          <ol id="topList" class="top-list"></ol>
+        </div>
+      </aside>
+    </div>
   </main>
 
   <!-- Full-screen watch view: episode rail + player + info panel -->

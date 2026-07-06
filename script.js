@@ -15,6 +15,7 @@ const categoryRow = document.getElementById("categoryRow");
 const bannerEl = document.getElementById("banner");
 const continueRow = document.getElementById("continueRow");
 const continueList = document.getElementById("continueList");
+const topList = document.getElementById("topList");
 
 const overlay = document.getElementById("overlay");
 const drawer = document.getElementById("drawer");
@@ -108,6 +109,7 @@ async function loadCatalog(query = "") {
       initBanner(data);
       renderContinueWatching(data);
       renderCategories(data);
+      renderTopList(data);
     }
 
     renderGrid(applyFilters(data));
@@ -154,6 +156,33 @@ function renderCategories(list) {
       chip.classList.add("active");
       renderGrid(applyFilters(lastCatalog));
     });
+  });
+}
+
+// ---------- sidebar: top titles by episode count ----------
+function renderTopList(list) {
+  if (!topList) return;
+  const top = [...list].sort((a, b) => b.episodeCount - a.episodeCount).slice(0, 5);
+
+  topList.innerHTML = top
+    .map(
+      (a, i) => `
+      <li>
+        <button class="top-item" data-id="${a.id}">
+          <span class="top-rank mono">${pad(i + 1)}</span>
+          <img class="top-thumb" src="${escapeHtml(a.cover)}" alt="" loading="lazy" />
+          <div class="top-info">
+            <div class="top-info-title">${escapeHtml(a.title)}</div>
+            <div class="top-info-sub">EP ${pad(a.episodeCount)}</div>
+          </div>
+        </button>
+      </li>
+    `
+    )
+    .join("");
+
+  topList.querySelectorAll(".top-item").forEach((el) => {
+    el.addEventListener("click", () => openAnime(Number(el.dataset.id)));
   });
 }
 
