@@ -133,7 +133,7 @@ module.exports = [
     title: "Chainsaw Man – The Movie: Reze Arc",
     cover: "https://image.tmdb.org/t/p/w500/pHyxb2RV5wLlboAwm9ZJ9qTVEDw.jpg",
     synopsis: "In a brutal war between devils, hunters, and secret enemies, a mysterious girl named Reze has stepped into Denji’s world, and he faces his deadliest battle yet, fueled by love in a world where survival knows no rules..",
-    tags: ["Animation","Action","Romance ","Fantasy","Movie"],
+    tags: ["Animation","Action","Romance ","Fantasy","Anime Movie"],
     episodes: [
       {
         number: 1,
