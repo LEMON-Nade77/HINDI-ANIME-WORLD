@@ -435,4 +435,86 @@ module.exports = [
       }
     ]
   },
+    {
+    id: 25,
+    title: "A Condition Called Love",
+    cover: "https://image.tmdb.org/t/p/w500/aaYPPivWuebwIKQvFYuWkp9m0q5.jpg",
+    banner: "https://butwhytho.net/wp-content/uploads/2024/06/A-Condition-Called-Love-Season-1-But-Why-Tho-4.jpg",
+    synopsis: "High school freshman Hotaru Hinase has a vibrant life full of family and friendship, but not much luck in romance. That all changes when she makes a warm gesture to her handsome and heartbroken classmate, Hananoi, leading to him asking her out and her becoming flustered. Witness a girl who grapples with the enigma of love and a boy who is heavy handed with it.",
+    tags: ["Animation","Comedy ","1 Seasons","Drama"],
+    episodes: [
+      {
+        number: 1,
+        title: "Episode 1",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7a8u/?pub=4pw4c8"
+      },
+            {
+        number: 2,
+        title: "Episode 2",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7a92/?pub=4pw4c8"
+      },
+            {
+        number: 3,
+        title: "Episode 3",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7a9i/?pub=4pw4c8"
+      },
+            {
+        number: 4,
+        title: "Episode 4",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7a9m/?pub=4pw4c8"
+      },
+            {
+        number: 5,
+        title: "Episode 5",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7a9w/?pub=4pw4c8"
+      },
+            {
+        number: 6,
+        title: "Episode 6",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7aa0/?pub=4pw4c8"
+      },
+            {
+        number: 7,
+        title: "Episode 7",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7aam/?pub=4pw4c8"
+      },
+            {
+        number: 8,
+        title: "Episode 8",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7aau/?pub=4pw4c8"
+      },
+            {
+        number: 9,
+        title: "Episode 9",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7ab4/?pub=4pw4c8"
+      },
+            {
+        number: 10,
+        title: "Episode 10",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7aba/?pub=4pw4c8"
+      },
+            {
+        number: 11,
+        title: "Episode 11",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7abg/?pub=4pw4c8"
+      },
+            {
+        number: 12,
+        title: "Episode 12",
+        type: "iframe",
+        src: "https://rumble.com/embed/v7a7abm/?pub=4pw4c8"
+      },
+    ]
+  },
 ];
