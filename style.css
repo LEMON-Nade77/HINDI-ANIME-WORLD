@@ -78,8 +78,8 @@ body {
 }
 
 .brand-stamp {
-  width: 38px;          /* Normal size jo aapko pehle chahiye tha */
-  height: 38px;
+  width: 48px;          /* Normal size jo aapko pehle chahiye tha */
+  height: 48px;
   flex-shrink: 0;
   
   /* Saare purane effects, gradients, text sizing, aur shadows hata diye hain */
